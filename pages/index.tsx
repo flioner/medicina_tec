@@ -31,7 +31,7 @@ export default function Home() {
     "Objetivo",
     "Infección Post-parto",
     "Síntomas y Prevención",
-    "Contacta a un Profesionnal",
+    "Ayuda Profesionnal",
     "Acerca de Nosotros",
     "Donaciones",
   ];

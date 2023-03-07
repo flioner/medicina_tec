@@ -84,8 +84,8 @@
 .navBarContact {
   cursor: pointer;
   background-color: var(--main);
-  border-radius: var(--roundedSmall);
-  padding: var(--roundedSmall);
+  border-radius: var(--roundedSmaller);
+  padding: var(--roundedSmaller);
 
   @media (max-width: 500px) {
     font-size: var(--EEXS);
@@ -136,10 +136,14 @@
 /* Content */
 .left {
   width: fit-content;
+
+  white-space: nowrap;
 }
 
 .leftButton {
+  width: 100%;
   cursor: pointer;
+
   border-radius: var(--roundedSmall);
   background-color: var(--main);
 

@@ -48,6 +48,7 @@
   /* Effects */
 
   --roundedSmall: max(min(0.7vw, 10px), 7px);
+  --roundedSmaller: max(min(0.55vw, 8px), 5px);
 
   --glow: 0 0 7px 3px rgba(0, 0, 0, 0.2);
 
