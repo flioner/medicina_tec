@@ -58,4 +58,6 @@
   --topglow: 0 -10px 10px -10px rgba(0, 0, 0, 0.2);
   --bottomglow: 0 10px 10px -10px rgba(0, 0, 0, 0.2);
   --topandbottomglow: 0 -10px 10px -10px #e8e8e8, 0 10px 10px -10px #e8e8e8;
+
+  /* */
 }

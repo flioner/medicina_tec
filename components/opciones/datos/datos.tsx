@@ -12,6 +12,7 @@ const Objetivo = () => {
         recursos disponibles online para todas las personas cursando su embarazo
         o que conviven activamente con personas embarazadas.
       </div>
+      <img className={s.fullImg} src={"pregnancy.png"} />
     </div>
   );
 };
@@ -27,6 +28,7 @@ const Infeccion = () => {
         vaginal no común o con olor no agradable, de igual forma puede darse una
         inflamación en diferentes áreas del cuerpo.
       </div>
+      <img className={s.fullImg} src={"postpartum.jpg"} />
     </div>
   );
 };
