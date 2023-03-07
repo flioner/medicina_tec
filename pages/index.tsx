@@ -6,6 +6,7 @@ import { NavBar } from "../components/navigation/navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Contact } from "../components/ui/contact/contact";
+import ReactPlayer from "react-player";
 
 export default function Home() {
   const [visibleDot, setDots] = useState(false);
@@ -61,7 +62,11 @@ export default function Home() {
       <div className={s.mainCont}>
         <Swiper className={s.slider}>
           <SwiperSlide className={s.slide}>
-            <div> uwu</div>
+            <video
+              width={"100vw"}
+              className={s.video}
+              src="https://res.cloudinary.com/dtnhdghv6/video/upload/v1642810303/3D_Music_Visualizer_2_zvqubj.mp4"
+            />
           </SwiperSlide>
           <SwiperSlide className={s.slide}>
             <div> owo</div>
