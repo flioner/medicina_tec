@@ -10,6 +10,8 @@
   --lightestgrey: #f6f6f6;
   --almostwhite: #f9f9f9;
   --white: #fff;
+  --main: #e1daca;
+  --accent: #c1b6a4;
 
   /* Responsive font sizes */
   --XXXXL: max(min(3vw, 4rem), 2.5rem);
@@ -20,6 +22,7 @@
   --L: max(min(2.2vw, 1.8rem), 0.9rem);
   --M: max(min(1.9vw, 1.5rem), 0.85rem);
   --S: max(min(1.7vw, 1.2rem), 0.8rem);
+  --SX: max(min(1.3vw, 1.1rem), 0.78rem);
   --XS: max(min(1vw, 1rem), 0.75rem);
   --XXS: max(min(1vw, 1rem), 0.7rem);
 

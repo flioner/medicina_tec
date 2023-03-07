@@ -25,14 +25,25 @@ export default function Home() {
     "Donaciones a programas de apoyo",
   ];
 
+  const opcionesCondensed = [
+    "Objetivo",
+    "Infección",
+    "Prevención",
+    "Acciones",
+    "Ayuda",
+    "Donaciones",
+  ];
+
   return (
     <Layout>
       <NavBar>
-        {opciones.map((item, index) => (
+        {opcionesCondensed.map((item, index) => (
           <div
             key={index}
             className={
-              currentSelection[index] == 1 ? s.leftButtonSelected : s.leftButton
+              currentSelection[index] == 1
+                ? s.navBarButtonSelected
+                : s.navBarButton
             }
             onClick={() => updateSelection(index)}
           >
@@ -50,7 +61,9 @@ export default function Home() {
             <div> owo</div>
           </SwiperSlide>
         </Swiper>
+      </div>
 
+      <div className={s.mainCont}>
         <div className={s.left}>
           {opciones.map((item, index) => (
             <div
