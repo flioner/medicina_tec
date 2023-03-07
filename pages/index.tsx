@@ -8,10 +8,12 @@ import "swiper/css";
 
 export default function Home() {
   const [visibleDot, setDots] = useState(false);
-  const [currentSelection, setSelection] = useState([0, 1, 0, 0, 0, 0]);
+  const [currentSelection, setSelection] = useState([
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  ]);
 
   const updateSelection = (index) => {
-    let temp = [0, 0, 0, 0, 0, 0];
+    let temp = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     temp[index] = 1;
     setSelection(temp);
   };
@@ -22,7 +24,7 @@ export default function Home() {
     "Señales de Alerta",
     "Recomendaciones",
     "Contacta a un Profesionnal",
-    "Donaciones a programas de apoyo",
+    "Donaciones",
   ];
 
   const opcionesCondensed = [

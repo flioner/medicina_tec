@@ -66,11 +66,11 @@
 
 /* NavBar Buttons */
 .navBarButton {
-  font-size: var(--EXXS);
+  font-size: var(--EEXS);
 }
 
 .navBarButtonSelected {
-  font-size: var(--EXXS);
+  font-size: var(--EEXS);
   font-weight: 700;
 }
 

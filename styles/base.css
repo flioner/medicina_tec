@@ -40,6 +40,7 @@
   --EXS: max(min(1.5vw, 1.8rem), 0.7rem);
   --EXXSM: max(min(1.5vw, 1.4rem), 0.7rem);
   --EXXS: max(min(1.2vw, 1.3rem), 0.55rem);
+  --EEXS: max(min(1vw, 1rem), 0.55rem);
 
   /* Effects */
 
