@@ -23,6 +23,7 @@
 }
 .img {
   height: max(min(12vw, 130px), 55px);
+  border-radius: 50%;
 }
 
 .name {

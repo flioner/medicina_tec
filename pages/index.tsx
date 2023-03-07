@@ -48,17 +48,17 @@ export default function Home() {
   const personas = [
     {
       name: "Ivana",
-      src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem.",
+      src: "Ivana.jpg",
+      desc: "Soy un estudiante de Psicología Clínica enfocado en el área de la salud. Decidí unirme a este proyecto porque creo que es importante para las mujeres embarazadas conocer las posibles infecciones que pueden ocurrir en el puerperio durante las primeras seis semanas después del parto.",
     },
     {
       name: "Sofía",
-      src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
+      src: "Sofia.jpg",
       desc: "Soy estudiante de medicina, junto con mi equipo, hemos investigado sobre las infecciones posparto, un tema relevante pero poco discutido en la sociedad. Esperamos compartir la información recolectada para ayudar a las mujeres en su proceso de recuperación.",
     },
     {
       name: "Valeria",
-      src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
+      src: "Vale.jpg",
       desc: "Soy estudiante de ciencias de la salud, decidí formar parte de este proyecto porque considero importante que se traten más abiertamente los temas de salud materna después del parto, ya que ayudaría a prevenir incontables pacientes afectadas por infecciones durante el post parto.",
     },
     {
@@ -68,7 +68,7 @@ export default function Home() {
     },
     {
       name: "Carlo",
-      src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
+      src: "Carlo.jpg",
       desc: "Soy estudiante de Biociencias. Este tema me llamó la atención ya que desconocía de lo que trataba y me dio mucha curiosidad investigar sobre él y conocerlo a fondo. Mi rol dentro del equipo fue proporcionar ideas, realizar documentos y apoyar en dentro del cortometraje :)",
     },
   ];
