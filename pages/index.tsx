@@ -6,12 +6,12 @@ import { NavBar } from "../components/navigation/navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Contact } from "../components/ui/contact/contact";
-import ReactPlayer from "react-player";
+import { Nosotros } from "../components/opciones/nosotros/nosotros";
 
 export default function Home() {
   const [visibleDot, setDots] = useState(false);
   const [currentSelection, setSelection] = useState([
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   ]);
 
   const updateSelection = (index) => {
@@ -26,6 +26,7 @@ export default function Home() {
     "Señales de Alerta",
     "Recomendaciones",
     "Contacta a un Profesionnal",
+    "Acerca de Nosotros",
     "Donaciones",
   ];
 
@@ -36,6 +37,34 @@ export default function Home() {
     "Acciones",
     "Ayuda",
     "Donaciones",
+  ];
+
+  const personas = [
+    {
+      name: "Ivana",
+      src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem.",
+    },
+    {
+      name: "Sofía",
+      src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem.",
+    },
+    {
+      name: "Valeria",
+      src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem.",
+    },
+    {
+      name: "Liz",
+      src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem.",
+    },
+    {
+      name: "Carlo",
+      src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem.",
+    },
   ];
 
   return (
@@ -92,7 +121,9 @@ export default function Home() {
         </div>
 
         <div className={s.right}>
-          <div className={s.rightContent}> owo</div>
+          <div className={s.rightContent}>
+            <Nosotros personas={personas} />
+          </div>
         </div>
       </div>
     </Layout>
