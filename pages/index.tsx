@@ -90,7 +90,7 @@ export default function Home() {
             key={index}
             className={
               currentSelection[index] == 1
-                ? s.navBarButtonSelected
+                ? `${s.navBarButton} ${s.navSelected}`
                 : s.navBarButton
             }
             onClick={() => updateSelection(index)}
@@ -125,7 +125,7 @@ export default function Home() {
               key={index}
               className={
                 currentSelection[index] == 1
-                  ? s.leftButtonSelected
+                  ? `${s.leftButton} ${s.leftButtonSelected}`
                   : s.leftButton
               }
               onClick={() => updateSelection(index)}

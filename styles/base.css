@@ -20,6 +20,7 @@
   --XL: max(min(2.3vw, 2.2rem), 1.5rem);
   --LG: max(min(2.2vw, 1.9rem), 1.05rem);
   --L: max(min(2.2vw, 1.8rem), 0.9rem);
+  --ML: max(min(2vw, 1.65rem), 0.87rem);
   --M: max(min(1.9vw, 1.5rem), 0.85rem);
   --S: max(min(1.7vw, 1.2rem), 0.8rem);
   --SX: max(min(1.3vw, 1.1rem), 0.78rem);

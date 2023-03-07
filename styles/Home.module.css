@@ -77,16 +77,7 @@
   }
 }
 
-.navBarButtonSelected {
-  cursor: pointer;
-
-  @media (max-width: 500px) {
-    font-size: var(--EEXS);
-  }
-
-  @media (min-width: 500px) {
-    font-size: var(--SX);
-  }
+.navSelected {
   font-weight: 700;
 }
 
@@ -176,29 +167,7 @@
 }
 
 .leftButtonSelected {
-  cursor: pointer;
-  margin: 0px 0px 10px 0px;
-  border-radius: var(--roundedSmall);
   background-color: var(--accent);
-
-  @media (max-width: 500px) {
-    padding: 8px;
-    font-size: var(--EXXS);
-  }
-
-  @media (min-width: 500px) {
-    padding: 11px;
-    font-size: var(--XS);
-  }
-
-  @media (min-width: 700px) {
-    padding: 17px;
-    font-size: var(--SX);
-  }
-  @media (min-width: 1000px) {
-    padding: 25px;
-    font-size: var(--SX);
-  }
 }
 
 .right {
