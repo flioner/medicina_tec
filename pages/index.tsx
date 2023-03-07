@@ -74,12 +74,12 @@ export default function Home() {
   ];
 
   const opcionesFull = [
-    <Objetivo />,
-    <Infeccion />,
-    <Sintomas />,
-    <></>,
-    <Nosotros personas={personas} />,
-    <></>,
+    <Objetivo key="objetivo" />,
+    <Infeccion key="infeccion" />,
+    <Sintomas key="sintomas" />,
+    <div key="empty"></div>,
+    <Nosotros key="nosotros" personas={personas} />,
+    <div key="empty2"></div>,
   ];
 
   return (
