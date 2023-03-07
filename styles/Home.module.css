@@ -16,6 +16,11 @@
   overflow-x: hidden;
 }
 
+.contCont {
+  position: relative;
+  height: fit-content;
+}
+
 .middle {
   position: relative;
   width: 100%;
@@ -135,9 +140,21 @@
 }
 /* Content */
 .left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   width: fit-content;
-
+  height: inherit;
   white-space: nowrap;
+}
+
+.filler {
+  position: relative;
+  height: 100%;
+  border-radius: var(--roundedSmall);
+  background-color: var(--main);
+  margin-bottom: 10px;
+  opacity: 0.35;
 }
 
 .leftButton {

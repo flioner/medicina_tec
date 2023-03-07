@@ -118,25 +118,28 @@ export default function Home() {
         </Swiper>
       </div>
 
-      <div className={s.mainCont}>
-        <div className={s.left}>
-          {opciones.map((item, index) => (
-            <div
-              key={index}
-              className={
-                currentSelection[index] == 1
-                  ? `${s.leftButton} ${s.leftButtonSelected}`
-                  : s.leftButton
-              }
-              onClick={() => updateSelection(index)}
-            >
-              {item}
-            </div>
-          ))}
-        </div>
+      <div className={s.contCont}>
+        <div className={s.mainCont}>
+          <div className={s.left}>
+            {opciones.map((item, index) => (
+              <div
+                key={index}
+                className={
+                  currentSelection[index] == 1
+                    ? `${s.leftButton} ${s.leftButtonSelected}`
+                    : s.leftButton
+                }
+                onClick={() => updateSelection(index)}
+              >
+                {item}
+              </div>
+            ))}
+            <div className={s.filler} />
+          </div>
 
-        <div className={s.right}>
-          <div className={s.rightContent}>{opcionesFull[selected]}</div>
+          <div className={s.right}>
+            <div className={s.rightContent}>{opcionesFull[selected]}</div>
+          </div>
         </div>
       </div>
     </Layout>
