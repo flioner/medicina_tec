@@ -27,8 +27,7 @@ const NavBar = ({ children }) => {
   return (
     <div className={pathname == "/" ? s.navContainer : s.navMainContainer}>
       <div className={s.combo} onClick={() => routeTo("/")}>
-        <img className={s.icon} src="icon.png" alt-text="" />
-        <div className={s.mainTitle}>Site Title</div>
+        <img className={s.icon} src="ITESM.svg" alt-text="" />
       </div>
       {children}
     </div>
@@ -58,8 +57,10 @@ const Footer = ({}) => {
   return (
     <div>
       <div className={s.footerSpacer}></div>
-      <div className={s.footer} onClick={() => routeTo("/")}>
-        Name © 2023
+      <div className={s.footerCont}>
+        <div className={s.footer} onClick={() => routeTo("/")}>
+          Name © 2023
+        </div>
       </div>
     </div>
   );

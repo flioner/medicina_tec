@@ -6,7 +6,7 @@
   padding: 20px;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 10px 10px -10px #e8e8e8;
+  /* box-shadow: 0 10px 10px -10px #e8e8e8; */
   font-size: var(--S);
   z-index: 99 !important;
 }
@@ -14,12 +14,14 @@
 .navContainer {
   display: flex;
   width: 100%;
+  max-width: var(--limit);
+  margin: auto;
   height: max(min(8vw, 80px), 50px);
   background-color: #fff;
   padding: 20px;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 10px 10px -10px #e8e8e8;
+  /* box-shadow: 0 10px 10px -10px #e8e8e8; */
   font-size: var(--S);
   z-index: 99 !important;
 }
@@ -44,7 +46,7 @@
 }
 
 .icon {
-  height: max(min(2vw, 42px), 25px);
+  height: max(min(3.2vw, 42px), 27px);
   margin-right: max(min(2vw, 15px), 5px);
 }
 
@@ -52,11 +54,18 @@
   height: max(min(10vw, 180px), 100px);
 }
 
+.footerCont {
+  width: 100%;
+
+  position: absolute;
+  bottom: -0px;
+}
 .footer {
   box-shadow: 0 -10px 10px -10px #e8e8e8;
-  position: absolute;
   width: 100%;
-  bottom: -0px;
+  max-width: var(--limit);
+  margin: auto;
+
   height: max(min(8vw, 80px), 50px);
   display: flex;
   justify-content: center;

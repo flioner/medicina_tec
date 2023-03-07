@@ -10,7 +10,7 @@ export default function Layout({ children }) {
     <div>
       <Head>
         <title>{siteTitle}</title>
-        <link rel="icon" href="icon.png" alt-text="" />
+        <link rel="icon" href="ITESM.svg" alt-text="" />
       </Head>
 
       {<></>}

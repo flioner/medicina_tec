@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { NavBar } from "../components/navigation/navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Contact } from "../components/ui/contact/contact";
 
 export default function Home() {
   const [visibleDot, setDots] = useState(false);
@@ -52,6 +53,9 @@ export default function Home() {
             {item}
           </div>
         ))}
+        <Contact>
+          <div className={s.navBarContact}>Contacto</div>
+        </Contact>
       </NavBar>
 
       <div className={s.mainCont}>

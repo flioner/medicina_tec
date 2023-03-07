@@ -10,8 +10,8 @@
   --lightestgrey: #f6f6f6;
   --almostwhite: #f9f9f9;
   --white: #fff;
-  --main: #e1daca;
-  --accent: #c1b6a4;
+  --main: #ddd; /* e1daca */
+  --accent: #aaa; /* c1b6a4 */
 
   /* Responsive font sizes */
   --XXXXL: max(min(3vw, 4rem), 2.5rem);
@@ -40,9 +40,13 @@
   --EXS: max(min(1.5vw, 1.8rem), 0.7rem);
   --EXXSM: max(min(1.5vw, 1.4rem), 0.7rem);
   --EXXS: max(min(1.2vw, 1.3rem), 0.55rem);
-  --EEXS: max(min(1vw, 1rem), 0.55rem);
+  --EEXS: max(min(1.2vw, 1rem), 0.55rem);
 
+  /* Display */
+  --limit: 1400px;
   /* Effects */
+
+  --roundedSmall: max(min(0.7vw, 10px), 7px);
 
   --glow: 0 0 7px 3px rgba(0, 0, 0, 0.2);
 
