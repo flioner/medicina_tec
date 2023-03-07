@@ -18,7 +18,7 @@ export default function Layout({ children }) {
       <div className={s.contContainer}>
         <div className={s.container}>
           <main>
-            <NavBar /> {children} <Footer />
+            {children} <Footer />
           </main>
         </div>
       </div>

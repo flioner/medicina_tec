@@ -1,10 +1,10 @@
 import Link from "next/link";
-import React from "react";
+import React, { Children } from "react";
 import { Contact } from "../ui/contact/contact";
 import s from "./navbar.module.css";
 import { useRouter } from "next/router";
 
-const NavBar = ({}) => {
+const NavBar = ({ children }) => {
   const { pathname } = useRouter();
   const currPath = useRouter();
 
@@ -30,9 +30,7 @@ const NavBar = ({}) => {
         <img className={s.icon} src="icon.png" alt-text="" />
         <div className={s.mainTitle}>Site Title</div>
       </div>
-      <Contact>
-        <div className={s.contacto}> Contact </div>
-      </Contact>
+      {children}
     </div>
   );
 };
@@ -61,7 +59,7 @@ const Footer = ({}) => {
     <div>
       <div className={s.footerSpacer}></div>
       <div className={s.footer} onClick={() => routeTo("/")}>
-        "Name" © 2023
+        Name © 2023
       </div>
     </div>
   );
