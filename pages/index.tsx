@@ -13,18 +13,19 @@ export default function Home() {
   const [currentSelection, setSelection] = useState([
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   ]);
+  const [selected, updatedSelected] = useState(0);
 
   const updateSelection = (index) => {
     let temp = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     temp[index] = 1;
+    updatedSelected(index);
     setSelection(temp);
   };
 
   const opciones = [
     "Objetivo",
     "Infección Post-parto",
-    "Señales de Alerta",
-    "Recomendaciones",
+    "Prevención",
     "Contacta a un Profesionnal",
     "Acerca de Nosotros",
     "Donaciones",
@@ -34,8 +35,8 @@ export default function Home() {
     "Objetivo",
     "Infección",
     "Prevención",
-    "Acciones",
     "Ayuda",
+    "Nosotros",
     "Donaciones",
   ];
 
@@ -65,6 +66,16 @@ export default function Home() {
       src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem.",
     },
+  ];
+
+  const opcionesFull = [
+    <></>,
+    <></>,
+    <></>,
+    <></>,
+
+    <Nosotros personas={personas} />,
+    <></>,
   ];
 
   return (
@@ -121,9 +132,7 @@ export default function Home() {
         </div>
 
         <div className={s.right}>
-          <div className={s.rightContent}>
-            <Nosotros personas={personas} />
-          </div>
+          <div className={s.rightContent}>{opcionesFull[selected]}</div>
         </div>
       </div>
     </Layout>
