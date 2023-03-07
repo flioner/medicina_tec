@@ -11,6 +11,10 @@
   @media (min-width: 500px) {
     margin-left: 0px;
   }
+  animation: fadeIn 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
 }
 .wrap {
   display: flex;
@@ -35,5 +39,17 @@
 
   @media (min-width: 500px) {
     font-size: var(--SX);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+    padding-top: 30px;
+  }
+
+  to {
+    opacity: 100%;
+    padding-top: 0px;
   }
 }

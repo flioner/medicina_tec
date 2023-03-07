@@ -6,7 +6,12 @@ import { NavBar } from "../components/navigation/navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Contact } from "../components/ui/contact/contact";
-import { Nosotros } from "../components/opciones/nosotros/nosotros";
+import {
+  Objetivo,
+  Infeccion,
+  Sintomas,
+  Nosotros,
+} from "../components/opciones/datos/datos";
 
 export default function Home() {
   const [visibleDot, setDots] = useState(false);
@@ -25,7 +30,7 @@ export default function Home() {
   const opciones = [
     "Objetivo",
     "Infección Post-parto",
-    "Prevención",
+    "Síntomas y Prevención",
     "Contacta a un Profesionnal",
     "Acerca de Nosotros",
     "Donaciones",
@@ -34,7 +39,7 @@ export default function Home() {
   const opcionesCondensed = [
     "Objetivo",
     "Infección",
-    "Prevención",
+    "Síntomas",
     "Ayuda",
     "Nosotros",
     "Donaciones",
@@ -49,12 +54,12 @@ export default function Home() {
     {
       name: "Sofía",
       src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem.",
+      desc: "Soy estudiante de medicina, junto con mi equipo, hemos investigado sobre las infecciones posparto, un tema relevante pero poco discutido en la sociedad. Esperamos compartir la información recolectada para ayudar a las mujeres en su proceso de recuperación.",
     },
     {
       name: "Valeria",
       src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem.",
+      desc: "Soy estudiante de ciencias de la salud, decidí formar parte de este proyecto porque considero importante que se traten más abiertamente los temas de salud materna después del parto, ya que ayudaría a prevenir incontables pacientes afectadas por infecciones durante el post parto.",
     },
     {
       name: "Liz",
@@ -64,16 +69,15 @@ export default function Home() {
     {
       name: "Carlo",
       src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem.",
+      desc: "Soy estudiante de Biociencias. Este tema me llamó la atención ya que desconocía de lo que trataba y me dio mucha curiosidad investigar sobre él y conocerlo a fondo. Mi rol dentro del equipo fue proporcionar ideas, realizar documentos y apoyar en dentro del cortometraje :)",
     },
   ];
 
   const opcionesFull = [
+    <Objetivo />,
+    <Infeccion />,
+    <Sintomas />,
     <></>,
-    <></>,
-    <></>,
-    <></>,
-
     <Nosotros personas={personas} />,
     <></>,
   ];
