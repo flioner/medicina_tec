@@ -126,12 +126,14 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: fit-content;
   width: fit-content;
   border-radius: var(--roundedSmall);
   background-color: rgb(231, 41, 41);
 }
 
+.owo {
+  height: 100px;
+}
 .video {
   position: relative;
   border-radius: var(--roundedSmall);

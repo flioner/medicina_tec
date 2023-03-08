@@ -8,7 +8,7 @@ const Objetivo = () => {
       <div className={s.title}> Objetivo</div>
       <div className={`${s.desc} ${s.paddingTop}`}>
         Informar a las mujeres embarazadas sobre el riesgo de las infecciones
-        posparto para reducir el número de Casos en México , a través de
+        posparto para reducir el número de casos en México , a través de
         recursos disponibles online para todas las personas cursando su embarazo
         o que conviven activamente con personas embarazadas.
       </div>

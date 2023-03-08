@@ -106,7 +106,7 @@ export default function Home() {
       </NavBar>
 
       <div className={s.mainCont}>
-        <Swiper className={s.slider}>
+        <Swiper autoHeight={true} className={s.slider}>
           <SwiperSlide className={s.slide}>
             <video
               width={"100vw"}
@@ -115,7 +115,7 @@ export default function Home() {
             />
           </SwiperSlide>
           <SwiperSlide className={s.slide}>
-            <div> owo</div>
+            <div className={s.owo}> owo</div>
           </SwiperSlide>
         </Swiper>
       </div>
