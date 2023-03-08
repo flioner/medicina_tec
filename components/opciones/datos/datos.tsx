@@ -50,6 +50,7 @@ const Sintomas = () => {
       </ul>
 
       <div className={s.title}> Recomendaciones </div>
+      <div className={s.padding4} />
       <div className={s.desc}>
         Si bien el embarazo debe ser una experiencia grata tanto para la madre
         como para el padre, es importante recordar que el médico tiene un rol
@@ -115,6 +116,7 @@ const Ayuda = ({}) => {
           <img className={s.icon} src="android.png" />
         </a>
       </div>
+      <div className={s.padding3} />
     </div>
   );
 };
@@ -130,6 +132,7 @@ const Nosotros = ({ personas }) => {
           </div>
         </div>
       ))}
+      <div className={s.padding3} />
     </div>
   );
 };

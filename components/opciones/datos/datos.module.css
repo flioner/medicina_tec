@@ -97,6 +97,17 @@
   padding: max(min(2vw, 30px), 12px) 0px;
 }
 
+.padding3 {
+  display: flex;
+  width: 100%;
+  padding: max(min(2vw, 15px), 7px) 0px;
+}
+
+.padding4 {
+  display: flex;
+  width: 100%;
+  padding: max(min(1vw, 7px), 5px) 0px;
+}
 .title {
   width: 100%;
   font-weight: 700;

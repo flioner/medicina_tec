@@ -176,6 +176,7 @@
 .fillerFiller {
   border-radius: var(--roundedSmall);
   background-color: var(--main);
+  opacity: 0.4;
   @media (max-width: 500px) {
     height: calc(100% - 10px);
     transform: translateY(8px);
@@ -236,16 +237,17 @@
 }
 
 .rightContent {
-  height: calc(100% - 8px);
   background-color: var(--main); /* var(--main) */
   padding: 15px 20px;
   border-radius: var(--roundedSmall);
 
   @media (max-width: 500px) {
+    height: calc(100% - 8px);
     font-size: var(--EXXS);
   }
 
   @media (min-width: 500px) {
+    height: calc(100% - 10px);
     font-size: var(--XS);
   }
 
