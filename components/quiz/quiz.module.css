@@ -27,7 +27,7 @@
   color: var(--accent2);
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 0px;
+  padding: max(min(0.5vw, 10px), 5px) 0px;
 }
 
 .questionTitle {
@@ -39,7 +39,7 @@
 .questionText {
   color: var(--accent2);
   padding-left: 10px;
-  font-size: var(--S);
+  font-size: var(--SX);
 }
 .button {
   color: var(--accent2);
@@ -59,6 +59,6 @@
 
 .counter {
   color: var(--accent2);
-  padding: 10px 0px;
+  padding: max(min(0.5vw, 20px), 8px) 0px max(min(0.5vw, 10px), 5px);
   font-size: var(--SX);
 }
