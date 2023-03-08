@@ -3,6 +3,7 @@ import React, { Children } from "react";
 import s from "./quiz.module.css";
 import questions from "./quiz.json";
 import { useState } from "react";
+import axios from "axios";
 
 const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -22,6 +23,10 @@ const Quiz = () => {
     }
     setScore(newScore);
     setShowScore(true);
+    axios.post("https://formspree.io/f/xknyjzze", {
+      message: newScore,
+      name: "calificacionQuiz",
+    });
   };
 
   const handleAnswerOption = (answer) => {

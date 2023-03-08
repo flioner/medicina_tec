@@ -1,38 +1,50 @@
 [
   {
-    "question": "What type of framework is Next.js?",
+    "question": "¿Qué es el puerperio?",
     "answerOptions": [
-      { "answer": "Frontend" },
-      { "answer": "Backend" },
-      { "answer": "FullStack", "isCorrect": true },
-      { "answer": "None of the above" }
+      { "answer": "Período de tiempo antes del parto." },
+      { "answer": "Proceso de concepción de un bebé." },
+      {
+        "answer": "Período de recuperación después del parto.",
+        "isCorrect": true
+      },
+      { "answer": "Período de tiempo para la gestación del feto." }
     ]
   },
   {
-    "question": "When was Next.js released?",
+    "question": "¿Qué es la sepsis?",
     "answerOptions": [
-      { "answer": "20 September 2019" },
-      { "answer": "14 January 2017" },
-      { "answer": "25 October 2016", "isCorrect": true },
-      { "answer": "28 March 2018" }
+      { "answer": "Enfermedad contagiosa del sistema respiratorio" },
+      { "answer": "Acumulación de líquido en los pulmones." },
+      {
+        "answer": "Respuesta inflamatoria grave a una infección.",
+        "isCorrect": true
+      },
+      { "answer": "Enfermedad crónica de la piel." }
     ]
   },
   {
-    "question": "Which CSS Framework are we using?",
+    "question": "La sepsis puerperal por definición es:",
     "answerOptions": [
-      { "answer": "Bootstrap" },
-      { "answer": "TailwindCSS", "isCorrect": true },
-      { "answer": "Chakra UI" },
-      { "answer": "Bulma CSS" }
+      { "answer": "Reacción alérgica a los alimentos." },
+      {
+        "answer": "Infección potencialmente mortal que se desarrolla después del parto.",
+        "isCorrect": true
+      },
+      { "answer": "Desprendimiento de la placenta antes del parto." },
+      { "answer": "Problema de coagulación de la sangre durante el parto." }
     ]
   },
   {
-    "question": "Which class in Tailwind is used to set flex direction of column?",
+    "question": "¿Qué factores hacen más susceptibles a las personas gestantes a contraer una infección post parto? ",
     "answerOptions": [
-      { "answer": "col" },
-      { "answer": "col-flex" },
-      { "answer": "flex-col", "isCorrect": true },
-      { "answer": "None of the above" }
+      { "answer": "Exposición frecuente a altas temperaturas." },
+      { "answer": "Consumo excesivo de alimentos azucarados." },
+      {
+        "answer": "Heridas en el tracto genital y sistema inmunológico debilitado.",
+        "isCorrect": true
+      },
+      { "answer": "Uso de prendas ajustadas." }
     ]
   }
 ]
