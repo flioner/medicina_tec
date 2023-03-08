@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { Children } from "react";
-import s from "./datos.module.css";
+import s from "./quiz.module.css";
 import questions from "./quiz.json";
 import { useState } from "react";
 
@@ -42,60 +42,60 @@ const Quiz = () => {
   };
 
   return (
-    <div>
+    <div className={s.quizCont}>
       {showScore ? (
-        <h1 className="text-3xl font-semibold text-center text-white">
-          You scored {score} out of {questions.length}
-        </h1>
+        <div className={s.score}>
+          <h1 className={s.questionTitle}>
+            You scored {score} out of {questions.length}
+          </h1>
+        </div>
       ) : (
         <>
-          <div className="flex flex-col items-start w-full">
-            <h4 className="mt-10 text-xl text-white/60">
-              Question {currentQuestion + 1} of {questions.length}
-            </h4>
-            <div className="mt-4 text-2xl text-white">
-              {questions[currentQuestion].question}
-            </div>
-          </div>
-          <div className="flex flex-col w-full">
-            {questions[currentQuestion].answerOptions.map((answer, index) => (
-              <div
-                key={index}
-                className="flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer border-white/10 rounded-xl bg-white/5"
-                onClick={(e) => handleAnswerOption(answer.answer)}
-              >
-                <input
-                  type="radio"
-                  name={answer.answer}
-                  value={answer.answer}
-                  checked={
-                    answer.answer ===
-                    selectedOptions[currentQuestion]?.answerByUser
-                  }
-                  onChange={(e) => handleAnswerOption(answer.answer)}
-                  className="w-6 h-6 bg-black"
-                />
-                <p className="ml-6 text-white">{answer.answer}</p>
+          <div className={s.quizContCont}>
+            <div>
+              <h4 className={s.counter}>
+                Question {currentQuestion + 1} of {questions.length}
+              </h4>
+              <div className={s.questionTitle}>
+                {questions[currentQuestion].question}
               </div>
-            ))}
-          </div>
-          <div className="flex justify-between w-full mt-4 text-white">
-            <button
-              onClick={handlePrevious}
-              className="w-[49%] py-3 bg-indigo-600 rounded-lg"
-            >
-              Previous
-            </button>
-            <button
-              onClick={
-                currentQuestion + 1 === questions.length
-                  ? handleSubmitButton
-                  : handleNext
-              }
-              className="w-[49%] py-3 bg-indigo-600 rounded-lg"
-            >
-              {currentQuestion + 1 === questions.length ? "Submit" : "Next"}
-            </button>
+            </div>
+            <div>
+              {questions[currentQuestion].answerOptions.map((answer, index) => (
+                <div
+                  key={index}
+                  onClick={(e) => handleAnswerOption(answer.answer)}
+                  className={s.question}
+                >
+                  <input
+                    type="radio"
+                    name={answer.answer}
+                    value={answer.answer}
+                    checked={
+                      answer.answer ===
+                      selectedOptions[currentQuestion]?.answerByUser
+                    }
+                    onChange={(e) => handleAnswerOption(answer.answer)}
+                  />
+                  <p className={s.questionText}>{answer.answer}</p>
+                </div>
+              ))}
+            </div>
+            <div>
+              <button onClick={handlePrevious} className={s.button}>
+                Previous
+              </button>
+              <button
+                onClick={
+                  currentQuestion + 1 === questions.length
+                    ? handleSubmitButton
+                    : handleNext
+                }
+                className={s.button}
+              >
+                {currentQuestion + 1 === questions.length ? "Submit" : "Next"}
+              </button>
+            </div>
           </div>
         </>
       )}

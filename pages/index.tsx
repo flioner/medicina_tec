@@ -147,7 +147,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Quiz />
+
+      <div className={s.mainCont}>
+        <Quiz />
+      </div>
+
       <CommentSection />
     </Layout>
   );
