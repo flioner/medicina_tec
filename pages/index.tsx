@@ -115,9 +115,6 @@ export default function Home() {
               src="https://res.cloudinary.com/dtnhdghv6/video/upload/v1642810303/3D_Music_Visualizer_2_zvqubj.mp4"
             />
           </SwiperSlide>
-          <SwiperSlide className={s.slide}>
-            <div className={s.owo}> owo</div>
-          </SwiperSlide>
         </Swiper>
       </div>
 
@@ -147,12 +144,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <form action="https://formsubmit.co/lionerrochae@gmail.com" method="POST">
-        <input type="text" name="name" required />
-        <input type="email" name="email" required />
-        <button type="submit">Send</button>
-      </form>
 
       <div className={s.mainCont}>
         <Quiz />
