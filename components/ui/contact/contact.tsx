@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import s from "./contact.module.css";
 import { Modal } from "../modal/modal";
-import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = ({ children }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [state, handleSubmit] = useForm("API_KEY");
   const [sub, setSub] = useState(false);
 
   const handleSub = () => {
@@ -27,7 +25,12 @@ const Contact = ({ children }) => {
       <div onClick={openModal}> {children} </div>
       <Modal float={true} isOpen={modalIsOpen} setOpen={setIsOpen}>
         <div className={s.contactForm}>
-          <form className={s.contactCont} onSubmit={handleSubmit}>
+          <form
+            className={s.contactCont}
+            onSubmit={handleSub}
+            action="https://formsubmit.co/lionerrochae@gmail.com"
+            method="POST"
+          >
             <img
               className={s.icon}
               src="https://res.cloudinary.com/ds5o5hlrl/image/upload/v1666317402/tuempresaenlinea/icons/closeIcon_aksvjy.png"
@@ -42,31 +45,23 @@ const Contact = ({ children }) => {
               id="email"
               type="email"
               name="email"
+              required
             />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
+
             <div className={s.break} />
             <label className={s.email} htmlFor="message">
               Message
             </label>
             <div className={s.break} />
-            <textarea className={s.messageBox} id="message" name="message" />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
+            <textarea
+              className={s.messageBox}
+              id="message"
+              name="message"
+              required
             />
             <div className={s.break2} />
 
-            <button
-              type="submit"
-              disabled={state.submitting}
-              className={s.submit}
-              onClick={handleSub}
-            >
+            <button type="submit" className={s.submit} onClick={handleSub}>
               Submit
             </button>
             <Modal float={true} isOpen={sub} setOpen={handleSub}>

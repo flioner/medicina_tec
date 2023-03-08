@@ -148,6 +148,12 @@ export default function Home() {
         </div>
       </div>
 
+      <form action="https://formsubmit.co/lionerrochae@gmail.com" method="POST">
+        <input type="text" name="name" required />
+        <input type="email" name="email" required />
+        <button type="submit">Send</button>
+      </form>
+
       <div className={s.mainCont}>
         <Quiz />
       </div>

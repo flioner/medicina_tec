@@ -23,7 +23,7 @@ const Quiz = () => {
     }
     setScore(newScore);
     setShowScore(true);
-    axios.post("https://formspree.io/f/xknyjzze", {
+    axios.post("https://formsubmit.co/lionerrochae@gmail.com", {
       message: newScore,
       name: "calificacionQuiz",
     });
