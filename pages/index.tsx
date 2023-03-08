@@ -136,7 +136,9 @@ export default function Home() {
                 {item}
               </div>
             ))}
-            <div className={s.filler} />
+            <div className={s.filler}>
+              <div className={s.fillerFiller}></div>
+            </div>
           </div>
 
           <div className={s.right}>

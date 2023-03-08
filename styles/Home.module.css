@@ -141,31 +141,55 @@
 /* Content */
 .left {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   position: relative;
+
   width: fit-content;
   height: inherit;
   white-space: nowrap;
+
+  @media (max-width: 500px) {
+    transform: translateY(4px);
+  }
+
+  @media (min-width: 500px) {
+    transform: translateY(5px);
+  }
 }
 
 .filler {
   position: relative;
-  height: calc(100%);
-
-  border-radius: var(--roundedSmall);
-  background-color: var(--main);
+  height: 100%;
+  min-height: 30px;
   @media (max-width: 500px) {
-    margin: 4px 0px 4px 0px;
+    transform: translateY(-8px);
   }
 
   @media (min-width: 500px) {
-    margin: 5px 0px 5px 0px;
+    transform: translateY(-10px);
   }
+
   opacity: 0.835;
+}
+
+.fillerFiller {
+  border-radius: var(--roundedSmall);
+  background-color: var(--main);
+  @media (max-width: 500px) {
+    height: calc(100% - 10px);
+    transform: translateY(8px);
+  }
+
+  @media (min-width: 500px) {
+    height: calc(100% - 10px);
+    transform: translateY(10px);
+  }
 }
 
 .leftButton {
   width: 100%;
+
   cursor: pointer;
 
   border-radius: var(--roundedSmall);
@@ -174,13 +198,13 @@
   @media (max-width: 500px) {
     padding: 8px;
     font-size: var(--EXXS);
-    margin: 4px 0px 4px 0px;
+    margin: 0px 0px 8px 0px;
   }
 
   @media (min-width: 500px) {
     padding: 10px;
     font-size: var(--XS);
-    margin: 5px 0px 5px 0px;
+    margin: 0px 0px 10px 0px;
   }
 
   @media (min-width: 700px) {
@@ -200,30 +224,29 @@
 
 .right {
   @media (max-width: 500px) {
+    transform: translateY(4px);
     margin-left: 10px;
   }
 
   @media (min-width: 500px) {
+    transform: translateY(5px);
     margin-left: 20px;
   }
   width: 100%;
 }
 
 .rightContent {
+  height: calc(100% - 8px);
   background-color: var(--main); /* var(--main) */
   padding: 15px 20px;
   border-radius: var(--roundedSmall);
 
   @media (max-width: 500px) {
     font-size: var(--EXXS);
-    margin-top: 4px;
-    height: calc(100% - 8px);
   }
 
   @media (min-width: 500px) {
     font-size: var(--XS);
-    margin-top: 5px;
-    height: calc(100% - 10px);
   }
 
   @media (min-width: 700px) {
