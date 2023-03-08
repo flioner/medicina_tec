@@ -1,8 +1,9 @@
 .main {
   position: relative;
-  display: flex;
-  justify-content: center;
-
+  max-width: var(--limit);
+  max-height: max(min(100vw, 1500px), 500px);
+  margin: 0 auto;
+  overflow: hidden;
   @media (max-width: 600px) {
     padding: 7px 20px 0px 20px;
   }
@@ -13,15 +14,17 @@
 }
 
 .comments {
+  transform-origin: center top;
+
   @media (max-width: 500px) {
-    transform: scale(0.7);
+    transform: scale(0.6);
   }
 
   @media (min-width: 500px) {
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
 
   @media (min-width: 700px) {
-    transform: scale(1);
+    transform: scale(0.8);
   }
 }

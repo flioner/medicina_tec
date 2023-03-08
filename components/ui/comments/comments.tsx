@@ -1,13 +1,12 @@
 import { FacebookProvider, Comments } from "react-facebook";
+import { DiscussionEmbed } from "disqus-react";
 import s from "./comments.module.css";
 
 export default function CommentSection() {
   return (
     <div className={s.main}>
       <div className={s.comments}>
-        <FacebookProvider appId="603822177855266">
-          <Comments href="http://www.facebook.com/es" />
-        </FacebookProvider>
+        <DiscussionEmbed shortname="medicinatec" config={{}} />
       </div>
     </div>
   );
