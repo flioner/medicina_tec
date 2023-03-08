@@ -79,7 +79,7 @@ export default function Home() {
     <Objetivo key="objetivo" />,
     <Infeccion key="infeccion" />,
     <Sintomas key="sintomas" />,
-    <Ayuda />,
+    <Ayuda key="ayuda" />,
     <Nosotros key="nosotros" personas={personas} />,
     <div key="empty2"></div>,
   ];
