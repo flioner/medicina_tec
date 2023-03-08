@@ -8,6 +8,7 @@
 .score {
   margin: 0px auto;
   width: fit-content;
+  font-size: var(--ML);
 }
 
 .quizContCont {
