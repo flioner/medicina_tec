@@ -27,7 +27,7 @@
   color: var(--accent2);
   display: flex;
   flex-wrap: wrap;
-  padding: max(min(0.5vw, 10px), 5px) 0px;
+  padding: max(min(0.5vw, 10px), 3px) 0px;
 }
 
 .questionTitle {
@@ -39,14 +39,14 @@
 .questionText {
   color: var(--accent2);
   padding-left: 10px;
-  font-size: var(--SX);
+  font-size: var(--XS);
 }
 .button {
   color: var(--accent2);
   background-color: var(--accent);
-  padding: 10px 20px;
+  padding: max(min(0.5vw, 10px), 7px) max(min(0.5vw, 20px), 7px);
   margin: 15px 10px 10px 0px;
-  font-size: var(--S);
+  font-size: var(--XS);
   width: calc(50% - 10px);
   border-radius: var(--roundedSmall);
   transition: 0.4s;
@@ -60,5 +60,5 @@
 .counter {
   color: var(--accent2);
   padding: max(min(0.5vw, 20px), 8px) 0px max(min(0.5vw, 10px), 5px);
-  font-size: var(--SX);
+  font-size: var(--XS);
 }
