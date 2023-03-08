@@ -51,7 +51,7 @@ const Quiz = () => {
       {showScore ? (
         <div className={s.score}>
           <h1 className={s.questionTitle}>
-            You scored {score} out of {questions.length}
+            Sacaste {score} de {questions.length} respuestas correctas.
           </h1>
         </div>
       ) : (
@@ -59,7 +59,7 @@ const Quiz = () => {
           <div className={s.quizContCont}>
             <div>
               <h4 className={s.counter}>
-                Question {currentQuestion + 1} of {questions.length}
+                Pregunta {currentQuestion + 1} de {questions.length}
               </h4>
               <div className={s.questionTitle}>
                 {questions[currentQuestion].question}

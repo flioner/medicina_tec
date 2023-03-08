@@ -37,7 +37,7 @@ const Contact = ({ children }) => {
               onClick={() => closeModal()}
             />
             <label className={s.email} htmlFor="email">
-              Email Address
+              Correo Electrónico
             </label>
             <div className={s.break} />
             <input
@@ -50,7 +50,7 @@ const Contact = ({ children }) => {
 
             <div className={s.break} />
             <label className={s.email} htmlFor="message">
-              Message
+              Mensaje
             </label>
             <div className={s.break} />
             <textarea
@@ -62,7 +62,7 @@ const Contact = ({ children }) => {
             <div className={s.break2} />
 
             <button type="submit" className={s.submit} onClick={handleSub}>
-              Submit
+              Enviar
             </button>
             <Modal float={true} isOpen={sub} setOpen={handleSub}>
               <div className={s.modalModal}>

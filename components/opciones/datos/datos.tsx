@@ -38,7 +38,7 @@ const Sintomas = () => {
     <div className={s.padding}>
       <div className={s.title}> Señales de Alerta </div>
       <ul className={s.list}>
-        <li>Fiebre alta y continua DESPUÉS DEL PARTO</li>
+        <li>Fiebre alta y continua después del parto</li>
         <li>Dolor pélvico intenso que se extiende a las zonas cercanas.</li>
         <li>
           Dolor a la palpación de la zona abdomnial baja, entre el ombligo y el
@@ -68,7 +68,7 @@ const Sintomas = () => {
         </li>
         <li>
           Si tu embarazo no es de alto riesgo y te es cómodo, procura hacer 30
-          minutos de actividad física Leve como salir a caminar.
+          minutos de actividad física leve como salir a caminar.
         </li>
         <li>
           Si mantienes relaciones sexuales durante tu embarazo, usa condón para

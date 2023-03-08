@@ -107,15 +107,14 @@ export default function Home() {
       </NavBar>
 
       <div className={s.mainCont}>
-        <Swiper autoHeight={true} className={s.slider}>
-          <SwiperSlide className={s.slide}>
-            <video
-              width={"100vw"}
-              className={s.video}
-              src="https://res.cloudinary.com/dtnhdghv6/video/upload/v1642810303/3D_Music_Visualizer_2_zvqubj.mp4"
-            />
-          </SwiperSlide>
-        </Swiper>
+        <video
+          width={"100vw"}
+          autoPlay
+          controls
+          muted
+          className={s.video}
+          src="Corto.mp4"
+        />
       </div>
 
       <div className={s.contCont}>
