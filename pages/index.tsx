@@ -10,6 +10,7 @@ import {
   Objetivo,
   Infeccion,
   Sintomas,
+  Ayuda,
   Nosotros,
 } from "../components/opciones/datos/datos";
 import CommentSection from "../components/ui/comments/comments";
@@ -78,7 +79,7 @@ export default function Home() {
     <Objetivo key="objetivo" />,
     <Infeccion key="infeccion" />,
     <Sintomas key="sintomas" />,
-    <div key="empty"></div>,
+    <Ayuda />,
     <Nosotros key="nosotros" personas={personas} />,
     <div key="empty2"></div>,
   ];

@@ -150,11 +150,18 @@
 
 .filler {
   position: relative;
-  height: 100%;
+  height: calc(100%);
+
   border-radius: var(--roundedSmall);
   background-color: var(--main);
-  margin-bottom: 10px;
-  opacity: 0.35;
+  @media (max-width: 500px) {
+    margin: 4px 0px 4px 0px;
+  }
+
+  @media (min-width: 500px) {
+    margin: 5px 0px 5px 0px;
+  }
+  opacity: 0.835;
 }
 
 .leftButton {
@@ -167,13 +174,13 @@
   @media (max-width: 500px) {
     padding: 8px;
     font-size: var(--EXXS);
-    margin: 0px 0px 7px 0px;
+    margin: 4px 0px 4px 0px;
   }
 
   @media (min-width: 500px) {
-    padding: 11px;
+    padding: 10px;
     font-size: var(--XS);
-    margin: 0px 0px 10px 0px;
+    margin: 5px 0px 5px 0px;
   }
 
   @media (min-width: 700px) {
@@ -203,17 +210,20 @@
 }
 
 .rightContent {
-  height: calc(100% - 10px);
-  background-color: var(--main);
+  background-color: var(--main); /* var(--main) */
   padding: 15px 20px;
   border-radius: var(--roundedSmall);
 
   @media (max-width: 500px) {
     font-size: var(--EXXS);
+    margin-top: 4px;
+    height: calc(100% - 8px);
   }
 
   @media (min-width: 500px) {
     font-size: var(--XS);
+    margin-top: 5px;
+    height: calc(100% - 10px);
   }
 
   @media (min-width: 700px) {

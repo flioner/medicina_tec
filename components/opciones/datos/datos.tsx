@@ -92,6 +92,32 @@ const Sintomas = () => {
   );
 };
 
+const Ayuda = ({}) => {
+  return (
+    <div className={s.centerCont}>
+      <div>
+        <div className={`${s.title} ${s.padding}`}>Encuentra Tu Clinica</div>
+        <img className={s.smallImg} src="IMSS.png" />
+      </div>
+
+      <div>
+        <div className={`${s.desc} ${s.morePaddingTop}`}>
+          Si deseas conocer la clínica que te corresponde de acuerdo a tu Codigo
+          Postal, descarga la aplicación IMSS Digital
+        </div>
+      </div>
+
+      <div className={s.iconsFlex}>
+        <a href="https://itunes.apple.com/us/app/imss-digital/id975273006?mt=8">
+          <img className={s.icon} src="apple.png" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=st.android.imsspublico">
+          <img className={s.icon} src="android.png" />
+        </a>
+      </div>
+    </div>
+  );
+};
 const Nosotros = ({ personas }) => {
   return (
     <div className={s.customPadding}>
@@ -107,4 +133,4 @@ const Nosotros = ({ personas }) => {
     </div>
   );
 };
-export { Objetivo, Infeccion, Sintomas, Nosotros };
+export { Objetivo, Infeccion, Sintomas, Ayuda, Nosotros };

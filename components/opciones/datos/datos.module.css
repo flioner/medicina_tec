@@ -18,6 +18,15 @@
   padding-top: max(min(2vw, 30px), 0px);
 }
 
+.centerCont {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: max(min(2vw, 30px), 0px);
+}
+
 .cont {
   display: flex;
   padding-bottom: 30px;
@@ -59,6 +68,35 @@
   animation-timing-function: ease-in-out;
 }
 
+.smallImg {
+  height: max(min(15vw, 240px), 65px);
+  margin: 0px auto;
+  animation: fadeIn2 0.8s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.icon {
+  height: max(min(5vw, 50px), 25px);
+  margin: 0px max(min(2vw, 25px), 10px);
+  animation: fadeIn2 0.8s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  color: var(--white);
+  filter: invert(30%);
+}
+
+.iconsFlex {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: max(min(2vw, 30px), 12px) 0px;
+}
+
 .title {
   width: 100%;
   font-weight: 700;
@@ -94,6 +132,11 @@
 
 .paddingTop {
   padding-top: 10px;
+}
+
+.morePaddingTop {
+  padding-top: max(min(2vw, 30px), 15px);
+  text-align: center;
 }
 
 .list {
