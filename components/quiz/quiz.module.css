@@ -1,6 +1,6 @@
 .quizCont {
   width: 100%;
-  padding: 50px 150px;
+  padding: max(min(3vw, 50px), 10px) max(min(3vw, 150px), 30px);
   background-color: var(--main);
   border-radius: var(--roundedSmall);
 }
@@ -12,7 +12,15 @@
 
 .quizContCont {
   margin: 0px auto;
-  min-width: 70%;
+  padding-left: 10px;
+  width: fit-content;
+  @media (max-width: 500px) {
+    min-width: 100%;
+  }
+
+  @media (min-width: 500px) {
+    min-width: 70%;
+  }
 }
 
 .question {
@@ -23,7 +31,7 @@
 }
 
 .questionTitle {
-  color: var(--accent3);
+  color: var(--accent2);
   font-weight: bold;
   font-size: var(--ML);
 }

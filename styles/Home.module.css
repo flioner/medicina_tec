@@ -73,6 +73,7 @@
 
 .navBarButton {
   cursor: pointer;
+
   @media (max-width: 500px) {
     font-size: var(--EEXS);
   }
@@ -87,7 +88,7 @@
 
 .navSelected {
   font-weight: 700;
-  color: var(--accent3);
+  color: var(--accent2);
   transition: color 0.3s;
 }
 
@@ -197,7 +198,7 @@
   width: 100%;
   color: var(--accent2);
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: var(--roundedSmall);
   background-color: var(--main);
 
