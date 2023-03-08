@@ -80,10 +80,15 @@
   @media (min-width: 500px) {
     font-size: var(--SX);
   }
+  font-weight: 400;
+  color: var(--accent2);
+  transition: color 0.3s;
 }
 
 .navSelected {
   font-weight: 700;
+  color: var(--accent3);
+  transition: color 0.3s;
 }
 
 .navBarContact {
@@ -171,14 +176,12 @@
   @media (min-width: 500px) {
     transform: translateY(-10px);
   }
-
-  opacity: 0.835;
 }
 
 .fillerFiller {
   border-radius: var(--roundedSmall);
   background-color: var(--main);
-  opacity: 0.4;
+  opacity: 0.5;
   @media (max-width: 500px) {
     height: calc(100% - 10px);
     transform: translateY(8px);
@@ -192,9 +195,9 @@
 
 .leftButton {
   width: 100%;
-
+  color: var(--accent2);
   cursor: pointer;
-
+  font-weight: 500;
   border-radius: var(--roundedSmall);
   background-color: var(--main);
 
@@ -219,10 +222,14 @@
     padding: 25px;
     font-size: var(--SX);
   }
+
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .leftButtonSelected {
+  color: var(--accent3);
   background-color: var(--accent);
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .right {

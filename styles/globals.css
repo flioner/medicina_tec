@@ -7,6 +7,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  background-color: var(--bg);
 }
 body::-webkit-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */

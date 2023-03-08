@@ -17,7 +17,6 @@
   max-width: var(--limit);
   margin: auto;
   height: max(min(8vw, 80px), 50px);
-  background-color: #fff;
   padding: 20px;
   justify-content: space-between;
   align-items: center;
@@ -56,7 +55,6 @@
 
 .footerCont {
   width: 100%;
-
   position: absolute;
   bottom: -0px;
 }
@@ -65,7 +63,6 @@
   width: 100%;
   max-width: var(--limit);
   margin: auto;
-
   height: max(min(8vw, 80px), 50px);
   display: flex;
   justify-content: center;

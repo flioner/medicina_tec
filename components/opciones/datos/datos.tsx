@@ -82,7 +82,7 @@ const Sintomas = () => {
         </li>
       </ul>
 
-      <div>
+      <div className={s.desc}>
         Si necesitas más orientación o tienes alguna duda sobre el manejo de tu
         embarazo u otros padecimientos durante el mismo, consulta a tu
         ginecólogo de confianza. Recuerda, tu derecho a la información y derecho

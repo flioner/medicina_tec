@@ -13,6 +13,7 @@ import {
   Ayuda,
   Nosotros,
 } from "../components/opciones/datos/datos";
+import { Quiz } from "../components/quiz/quiz";
 import CommentSection from "../components/ui/comments/comments";
 
 export default function Home() {
@@ -146,6 +147,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Quiz />
       <CommentSection />
     </Layout>
   );
