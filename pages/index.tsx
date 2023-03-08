@@ -12,6 +12,7 @@ import {
   Sintomas,
   Nosotros,
 } from "../components/opciones/datos/datos";
+import CommentSection from "../components/ui/comments/comments";
 
 export default function Home() {
   const [visibleDot, setDots] = useState(false);
@@ -142,6 +143,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <CommentSection />
     </Layout>
   );
 }
