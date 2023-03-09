@@ -36,7 +36,6 @@ export default function Home() {
     "Síntomas y Prevención",
     "Ayuda Profesionnal",
     "Acerca de Nosotros",
-    "Donaciones",
   ];
 
   const opcionesCondensed = [
@@ -45,7 +44,6 @@ export default function Home() {
     "Síntomas",
     "Ayuda",
     "Nosotros",
-    "Donaciones",
   ];
 
   const personas = [
@@ -66,8 +64,8 @@ export default function Home() {
     },
     {
       name: "Liz",
-      src: "https://pixlok.com/wp-content/uploads/2022/02/Profile-Icon-SVG-09856789.png",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eu aliquam nisl nisl sit amet lorem.",
+      src: "Liz.jpg",
+      desc: "Soy estudiante de medicina y una apasionada por las ciencias de la salud.  Esperamos causar un impacto positivo en las mujeres, creando un espacio seguro y verídico con información de calidad para su uso.",
     },
     {
       name: "Carlo",
@@ -82,7 +80,6 @@ export default function Home() {
     <Sintomas key="sintomas" />,
     <Ayuda key="ayuda" />,
     <Nosotros key="nosotros" personas={personas} />,
-    <div key="empty2"></div>,
   ];
 
   return (
